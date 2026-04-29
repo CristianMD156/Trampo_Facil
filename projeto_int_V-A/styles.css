@@ -1,0 +1,110 @@
+/* Styles for TrampoFácil */
+:root{
+  --azul-escuro: #1E3A8A;
+  --azul-claro:  #3B82F6;
+  --branco: #FFFFFF;
+  --cinza-claro: #F3F4F6;
+  --card-radius: 12px;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  background-color: var(--branco);
+  color: #111827;
+  -webkit-font-smoothing:antialiased;
+}
+
+.brand {
+  font-family: "Poppins", sans-serif;
+  font-weight:700;
+  color: var(--azul-escuro);
+  letter-spacing:0.2px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(0deg, rgba(59,130,246,0.06), rgba(59,130,246,0.02));
+  padding: 56px 0;
+  text-align:center;
+}
+
+.search-box{
+  max-width:920px;
+  margin: 0 auto;
+}
+
+.search-input{
+  border-radius: 8px 0 0 8px;
+  border-right: none;
+  box-shadow: none;
+}
+
+.search-btn{
+  border-radius: 0 8px 8px 0;
+  background-color: var(--azul-escuro);
+  color: white;
+  border: none;
+}
+
+/* Job card */
+.job-card{
+  background-color: var(--branco);
+  border-radius: var(--card-radius);
+  border: 1px solid #E6E9EE;
+  padding: 16px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.job-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(30,58,138,0.06);
+}
+
+.badge-role{
+  background-color: var(--cinza-claro);
+  color: #0f172a;
+  font-weight:500;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+/* Sidebar / Panels */
+.sidebar {
+  background: var(--cinza-claro);
+  padding: 18px;
+  border-radius: 12px;
+  min-height: 260px;
+}
+
+.panel-card{
+  background:white;
+  border-radius:12px;
+  padding:16px;
+  border:1px solid #E6E9EE;
+}
+
+footer{
+  background:#0b1220;
+  color: #d1d5db;
+  padding:28px 0;
+  margin-top:48px;
+}
+
+.footer-link{ color:#9CA3AF; text-decoration:none; }
+.fav-btn{ border: none; background: transparent; color: #ef4444; font-size: 1.1rem; }
+.small-muted{ font-size:13px; color:#6b7280; }
+.avatar{
+  width:64px; height:64px; background:linear-gradient(45deg,#3B82F6,#1E3A8A);
+  border-radius:10px; display:flex; align-items:center; justify-content:center; color:white; font-weight:700;
+}
+.brand-block{
+  width:48px; height:48px; background:var(--azul-escuro); border-radius:8px; display:flex; align-items:center; justify-content:center; color:white; font-weight:700;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px){
+  .hero{ padding: 28px 0; }
+  .search-input{ border-radius: 8px; margin-bottom: 8px; border-right:1px solid #E6E9EE; }
+  .search-btn{ border-radius: 8px; width:100%; }
+}
